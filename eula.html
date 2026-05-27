@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>End User License Agreement — Pet First Aid CPR App</title>
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --accent:       #2c7a4b;
+      --accent-light: #e8f5ee;
+      --text-primary: #1a1a1a;
+      --text-secondary: #4a4a4a;
+      --text-muted:   #6b6b6b;
+      --border:       #d8d8d8;
+      --bg:           #f9f9f9;
+      --card-bg:      #ffffff;
+      --radius:       10px;
+      --max-width:    740px;
+    }
+
+    html {
+      font-size: 16px;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue",
+                   Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text-primary);
+      line-height: 1.7;
+      padding: 0 16px 60px;
+    }
+
+    /* ── Header ── */
+    header {
+      max-width: var(--max-width);
+      margin: 0 auto 36px;
+      padding: 48px 0 28px;
+      border-bottom: 1px solid var(--border);
+      text-align: center;
+    }
+
+    header .app-icon {
+      width: 72px;
+      height: 72px;
+      border-radius: 18px;
+      background: var(--accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 16px;
+      font-size: 36px;
+      box-shadow: 0 4px 16px rgba(44, 122, 75, 0.28);
+    }
+
+    header h1 {
+      font-size: 1.55rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      letter-spacing: -0.02em;
+    }
+
+    header .subtitle {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      margin-top: 6px;
+    }
+
+    header .meta {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      margin-top: 18px;
+      flex-wrap: wrap;
+    }
+
+    header .meta span {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      background: var(--accent-light);
+      padding: 3px 10px;
+      border-radius: 20px;
+    }
+
+    /* ── Main card ── */
+    main {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 40px 44px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    }
+
+    @media (max-width: 600px) {
+      main { padding: 28px 20px; }
+    }
+
+    /* ── Intro banner ── */
+    .intro-banner {
+      background: var(--accent-light);
+      border-left: 4px solid var(--accent);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      padding: 14px 18px;
+      margin-bottom: 36px;
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+    }
+
+    /* ── Sections ── */
+    section {
+      margin-bottom: 36px;
+    }
+
+    section:last-of-type {
+      margin-bottom: 0;
+    }
+
+    h2 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 12px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--accent-light);
+    }
+
+    h3 {
+      font-size: 0.97rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin: 18px 0 6px;
+    }
+
+    p {
+      font-size: 0.93rem;
+      color: var(--text-secondary);
+      margin-bottom: 12px;
+    }
+
+    p:last-child { margin-bottom: 0; }
+
+    ul, ol {
+      padding-left: 20px;
+      margin-bottom: 12px;
+    }
+
+    li {
+      font-size: 0.93rem;
+      color: var(--text-secondary);
+      margin-bottom: 6px;
+    }
+
+    /* ── Warning box ── */
+    .warning-box {
+      background: #fff8e1;
+      border: 1px solid #f4c542;
+      border-radius: var(--radius);
+      padding: 16px 18px;
+      margin-top: 14px;
+    }
+
+    .warning-box strong {
+      display: block;
+      font-size: 0.88rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #8a6800;
+      margin-bottom: 6px;
+    }
+
+    .warning-box p {
+      font-size: 0.9rem;
+      color: #5c4700;
+      margin: 0;
+    }
+
+    /* ── Pricing table ── */
+    .pricing-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 14px;
+      font-size: 0.9rem;
+    }
+
+    .pricing-table th {
+      background: var(--accent-light);
+      color: var(--accent);
+      font-weight: 600;
+      text-align: left;
+      padding: 10px 14px;
+      border: 1px solid var(--border);
+    }
+
+    .pricing-table td {
+      padding: 10px 14px;
+      border: 1px solid var(--border);
+      color: var(--text-secondary);
+      vertical-align: top;
+    }
+
+    .pricing-table tr:nth-child(even) td {
+      background: var(--bg);
+    }
+
+    /* ── Contact card ── */
+    .contact-card {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 18px 20px;
+      margin-top: 14px;
+    }
+
+    .contact-card p {
+      margin: 0;
+      font-size: 0.92rem;
+    }
+
+    .contact-card a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .contact-card a:hover { text-decoration: underline; }
+
+    /* ── Footer ── */
+    footer {
+      max-width: var(--max-width);
+      margin: 32px auto 0;
+      text-align: center;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="app-icon" aria-hidden="true">🐾</div>
+    <h1>End User License Agreement</h1>
+    <p class="subtitle">Pet First Aid CPR App</p>
+    <div class="meta">
+      <span>Bundle ID: com.petfirstaidcpr.app</span>
+      <span>Effective Date: May 24, 2026</span>
+    </div>
+  </header>
+
+  <main>
+
+    <div class="intro-banner">
+      <strong>Please read this End User License Agreement ("Agreement") carefully before downloading or using the Pet First Aid CPR App.</strong> By tapping "Agree," downloading, installing, or using the App, you acknowledge that you have read, understood, and agree to be bound by the terms of this Agreement. If you do not agree, do not download or use the App.
+    </div>
+
+    <!-- 1. Parties -->
+    <section id="parties">
+      <h2>1. Parties</h2>
+      <p>This Agreement is between you ("User," "you," or "your") and the developer of the Pet First Aid CPR App ("Developer," "we," "us," or "our"), reachable at <a href="mailto:cprwestcovina@gmail.com">cprwestcovina@gmail.com</a>.</p>
+      <p>This Agreement is also subject to Apple's standard end user license agreement terms, which are incorporated herein by reference. Apple is not a party to this Agreement and is not responsible for the App or its content.</p>
+    </section>
+
+    <!-- 2. License Grant -->
+    <section id="license">
+      <h2>2. License Grant</h2>
+      <p>Subject to your compliance with this Agreement and payment of any applicable subscription fees, we grant you a limited, non-exclusive, non-transferable, revocable license to:</p>
+      <ul>
+        <li>Download and install the App on any Apple-branded device that you own or control;</li>
+        <li>Use the App solely for your personal, non-commercial purposes;</li>
+        <li>Access the educational content, features, and AI assistant ("Bark") made available through the App.</li>
+      </ul>
+      <p>This license does not include the right to sublicense, sell, resell, transfer, assign, or otherwise commercially exploit the App or any of its content. All rights not expressly granted to you are reserved by the Developer.</p>
+    </section>
+
+    <!-- 3. Subscription Terms -->
+    <section id="subscriptions">
+      <h2>3. Subscription Terms</h2>
+      <p>Access to premium features of the Pet First Aid CPR App requires an active paid subscription. The following plans are currently offered:</p>
+
+      <table class="pricing-table" aria-label="Subscription Plans">
+        <thead>
+          <tr>
+            <th>Plan</th>
+            <th>Price</th>
+            <th>Free Trial</th>
+            <th>Billing Cycle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Monthly</strong></td>
+            <td>$9.99 / month</td>
+            <td>None</td>
+            <td>Charged monthly</td>
+          </tr>
+          <tr>
+            <td><strong>Annual</strong></td>
+            <td>$29.99 / year</td>
+            <td>7-day free trial</td>
+            <td>Charged annually</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Auto-Renewal</h3>
+      <p>Subscriptions automatically renew unless cancelled at least 24 hours before the end of the current subscription period. Your Apple ID account will be charged for renewal within 24 hours prior to the end of the current period at the price of the selected plan.</p>
+
+      <h3>Free Trial</h3>
+      <p>The Annual plan includes a 7-day free trial for new subscribers. If you do not cancel before the free trial ends, your Apple ID account will be charged the full annual price ($29.99). You may only receive one free trial per Apple ID.</p>
+
+      <h3>Managing &amp; Cancelling Subscriptions</h3>
+      <p>You can manage and cancel your subscription at any time through your Apple ID Account Settings on your device. Cancellation takes effect at the end of the current billing period — you will continue to have access through the end of the paid period. No refunds are issued for any unused portion of a subscription period unless required by applicable law.</p>
+
+      <h3>Price Changes</h3>
+      <p>We reserve the right to change subscription prices. We will provide reasonable advance notice of any price changes. Your continued use of the App after a price change takes effect constitutes your agreement to pay the new price.</p>
+    </section>
+
+    <!-- 4. AI Assistant — Bark -->
+    <section id="ai-assistant">
+      <h2>4. AI Assistant — "Bark"</h2>
+      <p>The App includes an AI-powered assistant named "Bark" designed to provide general, educational information about pet first aid and CPR techniques. By using Bark, you acknowledge and agree that:</p>
+      <ul>
+        <li>Bark is an educational tool only and does not constitute veterinary or medical advice;</li>
+        <li>Responses generated by Bark are automated and may not be accurate, complete, or up to date;</li>
+        <li>You will not rely solely on Bark's responses when making decisions affecting the health or safety of an animal;</li>
+        <li>Bark does not have the ability to diagnose conditions, prescribe treatments, or replace the judgment of a licensed veterinarian.</li>
+      </ul>
+    </section>
+
+    <!-- 5. Educational Content — No Medical/Veterinary Advice -->
+    <section id="disclaimer-medical">
+      <h2>5. Educational Content — No Veterinary Advice</h2>
+
+      <div class="warning-box">
+        <strong>Important Notice</strong>
+        <p>The Pet First Aid CPR App, including all written content, videos, interactive guides, and responses from the Bark AI assistant, is provided for <strong>educational and informational purposes only</strong>. Nothing in this App constitutes veterinary advice, medical advice, or a substitute for professional veterinary care.</p>
+      </div>
+
+      <p style="margin-top:14px;">In an emergency involving your pet, always contact a licensed veterinarian or emergency animal hospital immediately. The content in this App is intended to supplement — not replace — professional veterinary guidance.</p>
+      <p>We make no representations or warranties that the information provided is accurate, current, complete, or suitable for any particular animal, breed, age, or health condition. You assume full responsibility for how you apply any information obtained through the App.</p>
+    </section>
+
+    <!-- 6. User Responsibilities -->
+    <section id="user-responsibilities">
+      <h2>6. User Responsibilities</h2>
+      <p>By using the App, you agree to:</p>
+      <ul>
+        <li>Use the App only for lawful purposes and in accordance with this Agreement;</li>
+        <li>Not reverse-engineer, decompile, disassemble, or attempt to derive the source code of the App;</li>
+        <li>Not copy, reproduce, distribute, or create derivative works based on the App or its content without our express written permission;</li>
+        <li>Not use automated tools, bots, scrapers, or similar technologies to access, collect, or index content from the App;</li>
+        <li>Not upload, transmit, or distribute any viruses, malware, or other harmful code through the App;</li>
+        <li>Maintain the confidentiality of your Apple ID and account information;</li>
+        <li>Promptly notify us of any unauthorized use of your account.</li>
+      </ul>
+      <p>You are solely responsible for ensuring that your use of the App complies with all applicable local, state, national, and international laws and regulations.</p>
+    </section>
+
+    <!-- 7. Intellectual Property -->
+    <section id="intellectual-property">
+      <h2>7. Intellectual Property</h2>
+      <p>All content within the App — including but not limited to text, graphics, logos, icons, images, audio clips, video clips, interactive features, the "Bark" AI assistant, the "Pet First Aid CPR App" name and branding, and the underlying software — is the exclusive property of the Developer or its licensors and is protected by United States and international copyright, trademark, trade secret, and other intellectual property laws.</p>
+      <p>Your use of the App does not grant you any ownership interest in or license to any intellectual property rights beyond the limited license set forth in Section 2 of this Agreement. Any feedback, suggestions, or ideas you submit regarding the App may be used by us without restriction or compensation to you.</p>
+    </section>
+
+    <!-- 8. Privacy -->
+    <section id="privacy">
+      <h2>8. Privacy</h2>
+      <p>Your use of the App is also governed by our Privacy Policy, which is incorporated into this Agreement by reference. By using the App, you consent to the collection, use, and disclosure of your information as described in our Privacy Policy. If you have questions about our data practices, please contact us at <a href="mailto:cprwestcovina@gmail.com">cprwestcovina@gmail.com</a>.</p>
+    </section>
+
+    <!-- 9. Disclaimer of Warranties -->
+    <section id="disclaimer-warranties">
+      <h2>9. Disclaimer of Warranties</h2>
+      <p>THE APP IS PROVIDED "AS IS" AND "AS AVAILABLE," WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED. TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, WE DISCLAIM ALL WARRANTIES, INCLUDING BUT NOT LIMITED TO:</p>
+      <ul>
+        <li>Any implied warranty of merchantability, fitness for a particular purpose, or non-infringement;</li>
+        <li>Any warranty that the App will meet your requirements or be available on an uninterrupted, secure, or error-free basis;</li>
+        <li>Any warranty regarding the accuracy, reliability, completeness, or timeliness of any content or information obtained through the App;</li>
+        <li>Any warranty that defects in the App will be corrected.</li>
+      </ul>
+      <p>No oral or written advice given by us or any authorized representative will create any warranty not expressly stated in this Agreement.</p>
+    </section>
+
+    <!-- 10. Limitation of Liability -->
+    <section id="limitation-liability">
+      <h2>10. Limitation of Liability</h2>
+      <p>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT WILL THE DEVELOPER, ITS AFFILIATES, LICENSORS, SERVICE PROVIDERS, EMPLOYEES, AGENTS, OFFICERS, OR DIRECTORS BE LIABLE FOR:</p>
+      <ul>
+        <li>Any indirect, incidental, special, consequential, or punitive damages;</li>
+        <li>Any loss of profits, revenue, data, goodwill, or other intangible losses;</li>
+        <li>Any damages arising from your use of or inability to use the App;</li>
+        <li>Any damages arising from decisions made based on content or responses from the Bark AI assistant;</li>
+        <li>Any veterinary costs, animal injury, or animal death related to the application — or misapplication — of information obtained through the App.</li>
+      </ul>
+      <p>IN JURISDICTIONS THAT DO NOT ALLOW THE EXCLUSION OR LIMITATION OF LIABILITY FOR CERTAIN TYPES OF DAMAGES, OUR LIABILITY SHALL BE LIMITED TO THE GREATEST EXTENT PERMITTED BY LAW. IN ALL OTHER CASES, OUR TOTAL CUMULATIVE LIABILITY SHALL NOT EXCEED THE AMOUNT YOU PAID FOR THE APP IN THE TWELVE (12) MONTHS IMMEDIATELY PRECEDING THE CLAIM.</p>
+    </section>
+
+    <!-- 11. Indemnification -->
+    <section id="indemnification">
+      <h2>11. Indemnification</h2>
+      <p>You agree to defend, indemnify, and hold harmless the Developer and its officers, directors, employees, and agents from and against any claims, liabilities, damages, losses, and expenses (including reasonable attorneys' fees) arising out of or in any way connected with: (a) your access to or use of the App; (b) your violation of this Agreement; or (c) your violation of any third-party rights, including intellectual property or privacy rights.</p>
+    </section>
+
+    <!-- 12. Modifications to the App and Agreement -->
+    <section id="modifications">
+      <h2>12. Modifications to the App and Agreement</h2>
+      <p>We reserve the right to modify, suspend, or discontinue the App (or any part thereof) at any time with or without notice. We also reserve the right to update this Agreement at any time. We will notify you of material changes by updating the "Effective Date" at the top of this Agreement and, where feasible, through in-app notification.</p>
+      <p>Your continued use of the App following the posting of an updated Agreement constitutes your acceptance of the revised terms. If you do not agree to the updated terms, you must stop using the App and cancel your subscription.</p>
+    </section>
+
+    <!-- 13. Termination -->
+    <section id="termination">
+      <h2>13. Termination</h2>
+      <p>This Agreement is effective until terminated. Your rights under this Agreement will terminate automatically and without notice if you fail to comply with any provision of this Agreement. Upon termination, you must cease all use of the App and delete all copies from your devices.</p>
+      <p>We reserve the right to terminate or suspend your access to the App at our sole discretion, without notice or liability, for any reason, including if we believe you have violated this Agreement.</p>
+      <p>Sections 5, 7, 9, 10, 11, 14, and 15 shall survive any termination of this Agreement.</p>
+    </section>
+
+    <!-- 14. Governing Law -->
+    <section id="governing-law">
+      <h2>14. Governing Law &amp; Dispute Resolution</h2>
+      <p>This Agreement shall be governed by and construed in accordance with the laws of the State of California, United States, without regard to its conflict of law provisions. Any dispute arising under or in connection with this Agreement shall be subject to the exclusive jurisdiction of the state and federal courts located in Los Angeles County, California.</p>
+      <p>If any provision of this Agreement is found by a court of competent jurisdiction to be invalid, illegal, or unenforceable, the remaining provisions shall continue in full force and effect. The failure of either party to enforce any right or provision of this Agreement will not be deemed a waiver of such right or provision.</p>
+    </section>
+
+    <!-- 15. Apple App Store Terms -->
+    <section id="apple-terms">
+      <h2>15. Apple App Store Requirements</h2>
+      <p>The following terms apply with respect to your use of the App obtained through the Apple App Store:</p>
+      <ul>
+        <li>This Agreement is concluded between you and the Developer only, and not with Apple Inc. ("Apple"). Apple is not responsible for the App or its content.</li>
+        <li>The license granted is limited to use on Apple-branded products running iOS that you own or control, as permitted by the App Store Terms of Service.</li>
+        <li>Apple has no obligation whatsoever to furnish any maintenance or support services with respect to the App.</li>
+        <li>In the event of any failure of the App to conform to any applicable warranty, you may notify Apple, and Apple will refund the purchase price (if any) for the App. To the maximum extent permitted by applicable law, Apple has no other warranty obligation with respect to the App.</li>
+        <li>Apple is not responsible for addressing any claims by you or any third party relating to the App, including product liability claims, claims that the App fails to conform to applicable legal or regulatory requirements, and claims arising under consumer protection or similar legislation.</li>
+        <li>If a third party claims that the App or your possession and use of the App infringes a third party's intellectual property rights, Apple will not be responsible for the investigation, defense, settlement, or discharge of any such claim.</li>
+        <li>Apple and its subsidiaries are third-party beneficiaries of this Agreement. Upon your acceptance of this Agreement, Apple will have the right (and will be deemed to have accepted the right) to enforce this Agreement against you as a third-party beneficiary thereof.</li>
+      </ul>
+    </section>
+
+    <!-- 16. Entire Agreement -->
+    <section id="entire-agreement">
+      <h2>16. Entire Agreement</h2>
+      <p>This Agreement, together with our Privacy Policy and any supplemental terms referenced herein, constitutes the entire agreement between you and the Developer with respect to the App and supersedes all prior and contemporaneous understandings, agreements, representations, and warranties, both written and oral, with respect to the App.</p>
+    </section>
+
+    <!-- 17. Contact -->
+    <section id="contact">
+      <h2>17. Contact Information</h2>
+      <p>If you have any questions, concerns, or complaints regarding this Agreement or the App, please contact us:</p>
+      <div class="contact-card">
+        <p><strong>Pet First Aid CPR App</strong></p>
+        <p style="margin-top:6px;">Email: <a href="mailto:cprwestcovina@gmail.com">cprwestcovina@gmail.com</a></p>
+        <p style="margin-top:4px; font-size:0.85rem; color:#6b6b6b;">Bundle ID: com.petfirstaidcpr.app</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Pet First Aid CPR App. All rights reserved.</p>
+    <p style="margin-top:6px;">Questions? <a href="mailto:cprwestcovina@gmail.com">cprwestcovina@gmail.com</a></p>
+  </footer>
+
+</body>
+</html>
